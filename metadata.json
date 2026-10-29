@@ -1,0 +1,7 @@
+{
+  "name": "AM3X3-speed escape",
+  "description": "High-octane 3D parkour speed game featuring 3 distinct worlds: Lava Rush, Frost Rush, and Haunted Rush. Smooth cartoon runner, jump pads, checkpoints, and full mobile & desktop controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
