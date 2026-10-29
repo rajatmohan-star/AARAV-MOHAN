@@ -74,7 +74,12 @@ export const ControlsGuideModal: React.FC<ControlsGuideModalProps> = ({ isOpen, 
         >
           Got It! Let&apos;s Run!
         </button>
+
+        <div className="mt-3 text-center text-[11px] font-bold text-slate-400">
+          AM3X3-speed escape • Created with pride by <span className="text-yellow-400 font-extrabold">Aarav Mohan</span>
+        </div>
       </div>
     </div>
   );
 };
+

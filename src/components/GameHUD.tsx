@@ -45,6 +45,20 @@ export const GameHUD: React.FC<GameHUDProps> = ({
 
   return (
     <div className="absolute inset-0 pointer-events-none flex flex-col justify-between p-3 select-none z-20">
+      {/* ================= TOP CREATOR BADGE ================= */}
+      <div className="flex flex-col items-center pointer-events-auto w-full max-w-5xl mx-auto -mt-1 mb-1.5">
+
+        <div className="flex items-center gap-2 rounded-full bg-slate-900/95 border-2 border-yellow-400 px-4 py-1 shadow-2xl text-xs font-black tracking-wide">
+          <span className="text-amber-400 text-sm">⚡</span>
+          <span className="text-white font-black uppercase tracking-wider">AM3X3-speed escape</span>
+          <span className="text-slate-500">•</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-amber-200 to-lime-300 font-extrabold">
+            Created by Aarav Mohan
+          </span>
+          <span className="text-amber-400 text-sm">⚡</span>
+        </div>
+      </div>
+
       {/* ================= TOP ARCADE BAR ================= */}
       <div className="flex items-center justify-between gap-2 pointer-events-auto w-full max-w-5xl mx-auto">
         {/* Left: Player Profile Pill (Inspired by SpeedyWizard57 in reference screenshots) */}
@@ -54,13 +68,14 @@ export const GameHUD: React.FC<GameHUDProps> = ({
           </div>
           <div className="flex flex-col pr-1">
             <span className="text-xs font-black tracking-wide text-amber-200 leading-tight">
-              SpeedyRunner
+              Aarav Mohan
             </span>
             <span className="text-[10px] font-extrabold text-amber-400/90 leading-none">
-              Level {stats.activeWorld * 12 + stats.currentCheckpoint * 4}
+              Creator • Level {stats.activeWorld * 12 + stats.currentCheckpoint * 4}
             </span>
           </div>
         </div>
+
 
         {/* Center: SPEED METER (Prominent arcade lightning gauge matching screenshot!) */}
         <div className="flex items-center gap-2 rounded-2xl bg-slate-900/90 border-2 border-yellow-400 px-3.5 py-1.5 shadow-xl">
